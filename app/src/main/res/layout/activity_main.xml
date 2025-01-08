@@ -27,18 +27,13 @@
     </LinearLayout>
 
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:listitem="@layout/fragment_message_bubble"
-        >
-    </androidx.recyclerview.widget.RecyclerView>
-
-    <Space
-        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1"
-        />
+        android:id="@id/fragment_conversation"
+        android:name="com.github.freitzzz.kitkatgpt.fragment.Conversation"
+        tools:layout="@layout/fragment_conversation" />
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
@@ -46,7 +41,6 @@
         android:background="@drawable/rounded_shape"
         android:id="@id/fragment_bottom_natural_language_input"
         android:name="com.github.freitzzz.kitkatgpt.fragment.BottomNaturalLanguageInput"
-
         tools:layout="@layout/fragment_bottom_natural_language_input" />
 
 </LinearLayout>

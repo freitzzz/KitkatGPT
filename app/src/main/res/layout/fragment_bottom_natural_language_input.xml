@@ -11,6 +11,7 @@
     tools:context=".fragment.BottomNaturalLanguageInput">
 
     <EditText
+        android:id="@+id/fragment_bottom_natural_language_input_edit_text"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:autofillHints="raw"
@@ -18,7 +19,7 @@
         android:background="@android:color/transparent"
         android:hint="@string/bottom_natural_language_input_hint"
         android:paddingStart="@dimen/normal_padding"
-        android:paddingEnd="@dimen/normal_padding"/>
+        android:paddingEnd="@dimen/normal_padding" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,8 +45,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/fragment_bottom_natural_language_input_icon_send"
             android:contentDescription="@string/bottom_natural_language_submit_button_description"
             android:src="@drawable/icon_send"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
     </LinearLayout>
 </LinearLayout>
