@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/rounded_shape"
-    tools:context=".MessageBubble">
+    tools:context=".fragment.MessageBubble">
 
     <TextView
         android:id="@+id/message_bubble_text"

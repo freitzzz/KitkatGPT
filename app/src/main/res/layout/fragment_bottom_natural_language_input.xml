@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/rounded_shape"
     android:padding="@dimen/normal_padding"
-    tools:context=".BottomNaturalLanguageInput">
+    tools:context=".fragment.BottomNaturalLanguageInput">
 
     <EditText
         android:layout_width="match_parent"
