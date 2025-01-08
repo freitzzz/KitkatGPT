@@ -1,6 +1,7 @@
 package com.github.freitzzz.kitkatgpt.fragment
 
 import android.os.Bundle
+import android.util.LayoutDirection
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,8 +67,14 @@ class MessagesAdapter : RecyclerView.Adapter<MessageViewHolder>() {
 
 class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(message: Message?) {
-        if (message != null) {
-            itemView.findViewById<TextView>(R.id.message_bubble_text).text = message.value
+        if (message == null) {
+            return
         }
+
+        if (message.reply) {
+            itemView.layoutDirection = View.LAYOUT_DIRECTION_RTL
+        }
+
+        itemView.findViewById<TextView>(R.id.message_bubble_text).text = message.value
     }
 }
