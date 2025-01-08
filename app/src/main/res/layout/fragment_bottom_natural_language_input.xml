@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_bottom_natural_language_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_shape"
+    android:padding="@dimen/normal_padding"
+    tools:context=".BottomNaturalLanguageInput">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints="raw"
+        android:inputType="text"
+        android:background="@android:color/transparent"
+        android:hint="@string/bottom_natural_language_input_hint"
+        android:paddingStart="@dimen/normal_padding"
+        android:paddingEnd="@dimen/normal_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_padding"
+        android:background="@color/gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_natural_language_history"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/small_padding"
+            app:drawableLeftCompat="@drawable/icon_sparkle" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bottom_natural_language_submit_button_description"
+            android:src="@drawable/icon_send"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
