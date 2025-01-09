@@ -33,6 +33,7 @@
         android:layout_weight="1"
         android:id="@id/fragment_conversation"
         android:name="com.github.freitzzz.kitkatgpt.fragment.Conversation"
+        android:paddingTop="@dimen/small_padding"
         tools:layout="@layout/fragment_conversation" />
 
     <androidx.fragment.app.FragmentContainerView
