@@ -37,6 +37,7 @@ class Conversation : Fragment() {
         viewModel.messages().observe(viewLifecycleOwner) {
             if (it != null) {
                 adapter.post(it)
+                recyclerView.smoothScrollToPosition(adapter.itemCount - 1)
             }
         }
     }
